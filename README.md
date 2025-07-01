@@ -37,16 +37,19 @@ The model is trained over many rounds (epochs), using part of the data to check 
 
 5. **Train the model**  
    The model is trained over 200 epochs with 30% of the data reserved for validation.
+   
 ![image](https://github.com/user-attachments/assets/719c5866-324d-46bd-ab9a-77fe1e11772f)
 
-6. **Evaluate performance**  
+7. **Evaluate performance**  
    After training, the model’s accuracy is tested on the full dataset.
-
+   
 ![image](https://github.com/user-attachments/assets/fa9f44e7-d9a0-4db6-847e-7fa15d900266)
 
 7. **Visualize training**  
    Training history is plotted to show accuracy and loss over epochs.
+   
 ![image](https://github.com/user-attachments/assets/3d53fd94-fb9a-4c74-abf3-f5516e91abae)
+
 ![image](https://github.com/user-attachments/assets/e147a6de-e6c4-4961-8ec3-a89bec1f5325)
 
 ---
