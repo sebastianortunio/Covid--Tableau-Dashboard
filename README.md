@@ -1,8 +1,6 @@
 # DNN IRIS – Classifying Flowers with Deep Learning
 
 **Author:** Sebastian Ortuno  
-**Date:** June 21, 2025
-
 ---
 
 This project builds a deep learning model to identify different types of iris flowers using their petal and sepal measurements. The data is cleaned and prepared so the model can learn properly, and the flower types are converted into a format the model can understand. The model uses several layers to learn patterns and decide which species each flower belongs to.
