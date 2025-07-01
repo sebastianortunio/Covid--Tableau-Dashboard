@@ -22,7 +22,7 @@ The model is trained over many rounds (epochs), using part of the data to check 
 2. **Prepare the dataset**  
    The Iris dataset is shuffled and normalized. The species labels are converted into one-hot encoded vectors for classification.
 
-   ![image](https://github.com/user-attachments/assets/e61c7ab3-4ba6-4a18-b6ba-add9e8be4994)
+![image](https://github.com/user-attachments/assets/e61c7ab3-4ba6-4a18-b6ba-add9e8be4994)
 
 
 3. **Build the model**  
