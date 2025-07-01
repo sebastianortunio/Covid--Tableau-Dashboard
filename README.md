@@ -43,9 +43,10 @@ The model is trained over many rounds (epochs), using part of the data to check 
 7. **Evaluate performance**  
    After training, the model’s accuracy is tested on the full dataset.
    
-![image](https://github.com/user-attachments/assets/fa9f44e7-d9a0-4db6-847e-7fa15d900266)
+![image](https://github.com/user-attachments/assets/8c8a636f-de08-4df4-9717-f24dd25c15cd)
 
-7. **Visualize training**  
+
+8. **Visualize training**  
    Training history is plotted to show accuracy and loss over epochs.
    
 ![image](https://github.com/user-attachments/assets/3d53fd94-fb9a-4c74-abf3-f5516e91abae)
