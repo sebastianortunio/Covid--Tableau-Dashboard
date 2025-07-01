@@ -1,4 +1,4 @@
-# DNN IRIS
+# DNN IRIS – Classifying Flowers with Deep Learning
 
 **Author:** Sebastian Ortuno  
 **Date:** June 21, 2025
