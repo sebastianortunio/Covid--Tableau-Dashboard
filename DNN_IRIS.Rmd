@@ -1,0 +1,93 @@
+---
+title: "Practica"
+author: "Sebastian Ortuno"
+date: "2025-06-21"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+For this assignment, I will build a DNN model based on the IRIS dataset based on the pdf I found in BB. I made sure first to install all the libraries needed for this project before I start.
+
+I divided this project in the following steps:
+
+1. Load the libraries.
+2. 
+
+# **1. Load the libraries**
+
+
+```{r}
+library(keras) #Load Keras Library
+library(tensorflow) #Load Tensorflow
+# Set seed for reproducibility
+tensorflow::set_random_seed(1)
+```
+
+# **2. Prepare the dataset**  
+
+```{r}
+data <- iris[sample(nrow(iris)), ]  # shuffle rows and randomize order of samples.
+x <- data[, 1:4] #This separates the features
+y <- data$Species #Separates  species column.
+
+# Normalize features to [0,1]
+x <- as.matrix(apply(x, 2, function(col) (col - min(col)) / (max(col) - min(col))))
+
+
+y <- to_categorical(as.integer(as.factor(y)) - 1, num_classes = 3) #  Convert lables to integers and then apple One-hot encoding.
+```
+
+# **3. Build the model.**
+
+```{r}
+
+model <- keras_model_sequential() %>% #Define a sequential DNN model.
+  layer_dense(units = 10, activation = "relu", input_shape = ncol(x)) %>% #Input plus first hidden layer
+  layer_dense(units = 10, activation = "relu") %>% #Second hidden layer
+  layer_dense(units = 3, activation = "softmax") #output layer(3 classes)
+```
+
+
+# **4. Compile the model.**
+
+```{r}
+model %>% compile( #Compile function
+  loss = "categorical_crossentropy",
+  optimizer = "adam", #efficient adaptive optimizer. 
+  metrics = "accuracy" #This track the accuracy during training.
+)
+
+```
+
+# **5. Train the model**
+
+```{r}
+fit <- model %>% fit( #train the model
+  x = x, #Features
+  y = y, #one-hot encoded labels. 
+  shuffle = TRUE, #Shuffle data before each epoch
+  batch_size = 5, #batch size
+  validation_split = 0.3, #30% for validation
+  epochs = 200 #Number of training epochs
+)
+
+```
+
+
+# **6.Evaluate performance**
+
+```{r}
+score <- model %>% evaluate(x, y) #Evaluate the model on the dataset
+cat("Test accuracy:", score["accuracy"], "\n") #Print the test accuracy
+```
+
+# **7. Graphics**
+
+```{r}
+# Plot training history
+plot(fit)
+
+```
