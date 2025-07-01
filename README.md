@@ -10,7 +10,13 @@ This project builds a deep learning model to identify different types of iris fl
 The model is trained over many rounds (epochs), using part of the data to check its accuracy as it learns. At the end, the model’s accuracy is measured, and the training progress is shown in charts. This project shows how a basic deep learning model can solve a simple classification problem step by step.
 
 ---
+## Requirements
 
+- R
+- keras package
+- tensorflow package
+
+---
 ## How it works
 
 1. **Load the libraries**  
@@ -54,14 +60,6 @@ The model is trained over many rounds (epochs), using part of the data to check 
 ![image](https://github.com/user-attachments/assets/3d53fd94-fb9a-4c74-abf3-f5516e91abae)
 
 ![image](https://github.com/user-attachments/assets/e147a6de-e6c4-4961-8ec3-a89bec1f5325)
-
----
-
-## Requirements
-
-- R
-- keras package
-- tensorflow package
 
 ---
 
