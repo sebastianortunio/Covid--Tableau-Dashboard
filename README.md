@@ -41,7 +41,7 @@ The model is trained over many rounds (epochs), using part of the data to check 
 ![image](https://github.com/user-attachments/assets/719c5866-324d-46bd-ab9a-77fe1e11772f)
 
 7. **Evaluate performance**  
-   After training, the model’s accuracy is tested on the full dataset.
+   The model was evaluated using the same dataset after training. It achieved **96% accuracy**, meaning it correctly classified most of the iris flowers. The evaluation also reported a low loss value of **0.0808**, indicating good performance on this simple classification task.
    
 ![image](https://github.com/user-attachments/assets/8c8a636f-de08-4df4-9717-f24dd25c15cd)
 
