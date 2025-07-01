@@ -47,7 +47,12 @@ The model is trained over many rounds (epochs), using part of the data to check 
 
 
 8. **Visualize training**  
-   Training history is plotted to show accuracy and loss over epochs.
+   The plot below shows the training and validation performance over 200 epochs. 
+
+- **Loss** steadily decreased for both training and validation sets, indicating the model was learning effectively without overfitting.
+- **Accuracy** quickly improved and reached around **96%**, remaining stable across epochs.
+
+This confirms that the model learned well and generalized properly on the validation data.
    
 ![image](https://github.com/user-attachments/assets/3d53fd94-fb9a-4c74-abf3-f5516e91abae)
 
