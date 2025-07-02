@@ -30,7 +30,7 @@ The model is trained over many rounds (epochs), using part of the data to check 
 
 
 3. **Build the model**  
-   A sequential deep neural network is created with two hidden layers (using ReLU activation) and an output layer with softmax activation for three classes.
+   A sequential deep neural network is created with two hidden layers (using relu activation) and an output layer with softmax activation for three classes.
 
 ![image](https://github.com/user-attachments/assets/e8cb66ae-ff84-4a61-a51f-a38e49a4f6e8)
 
